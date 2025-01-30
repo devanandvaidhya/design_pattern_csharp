@@ -1,0 +1,15 @@
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\bin\Debug\net6.0\SystemDesignLLD.exe
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\bin\Debug\net6.0\SystemDesignLLD.deps.json
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\bin\Debug\net6.0\SystemDesignLLD.runtimeconfig.json
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\bin\Debug\net6.0\SystemDesignLLD.dll
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\bin\Debug\net6.0\SystemDesignLLD.pdb
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.csproj.AssemblyReference.cache
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.AssemblyInfoInputs.cache
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.AssemblyInfo.cs
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.csproj.CoreCompileInputs.cache
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.dll
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\refint\SystemDesignLLD.dll
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.pdb
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\SystemDesignLLD.genruntimeconfig.cache
+D:\Interview Preparation\LLD\Practice\SystemDesignLLD\SystemDesignLLD\obj\Debug\net6.0\ref\SystemDesignLLD.dll
