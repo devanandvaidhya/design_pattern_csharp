@@ -2,6 +2,7 @@
 using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Momento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
+using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 
 
 //Memento pattern
@@ -23,19 +24,32 @@ using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
 //caretaker.undo(editor);
 //Console.WriteLine(editor.getContent());
 
-//-----------------End-------------------
+//-----------------End-----------------------------------------------------------------------------------------------------------
 
 //---Observer pattern-----------
 
-WeatherStation weatherStation = new WeatherStation();
-Mobile mobile = new Mobile("Samsung");
-Tablet tablet = new Tablet("VIVO");
+//WeatherStation weatherStation = new WeatherStation();
+//Mobile mobile = new Mobile("Samsung");
+//Tablet tablet = new Tablet("VIVO");
 
-weatherStation.attach(tablet);
-weatherStation.attach(mobile);
+//weatherStation.attach(tablet);
+//weatherStation.attach(mobile);
 
-weatherStation.setTemperature(10);
-weatherStation.setTemperature(20);
+//weatherStation.setTemperature(10);
+//weatherStation.setTemperature(20);
 
-weatherStation.detach(tablet);
-weatherStation.setTemperature(5);
+//weatherStation.detach(tablet);
+//weatherStation.setTemperature(5);
+
+//--------End---------------------------------------------------------------------------------------------------------------------------------
+
+// Single responsibility , open close imlementation
+PaymentService paymentService = new PaymentService();
+//paymentService.setPayment(new CreditCard());
+//paymentService.setPayment(new DebitCard());
+//added new UPI payment method 
+
+paymentService.setPayment(new UPI());
+paymentService.payment();
+
+//----------------------------------End----------------------------------------------------------------------------------------------------
