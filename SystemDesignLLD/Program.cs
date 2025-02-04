@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using SystemDesignLLD.BehaviouralPatterns.CommandPattern;
 using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Momento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
@@ -43,13 +44,23 @@ using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 
 //--------End---------------------------------------------------------------------------------------------------------------------------------
 
-// Single responsibility , open close imlementation
-PaymentService paymentService = new PaymentService();
-//paymentService.setPayment(new CreditCard());
-//paymentService.setPayment(new DebitCard());
-//added new UPI payment method 
+// ------------------Strategy Pattern--------------------------------
 
-paymentService.setPayment(new UPI());
-paymentService.payment();
+//// Single responsibility , open close imlementation
+//PaymentService paymentService = new PaymentService();
+////paymentService.setPayment(new CreditCard());
+////paymentService.setPayment(new DebitCard());
+////added new UPI payment method 
+
+//paymentService.setPayment(new UPI());
+//paymentService.payment();
 
 //----------------------------------End----------------------------------------------------------------------------------------------------
+//--------------------------Command Pattern--------------------------------------------
+
+TextEditors textEditors = new TextEditors();
+Button button = new Button();
+button.setCommand(new BoldCommand(textEditors));
+button.click();
+button.setCommand(new ItalicCommand(textEditors));
+button.click();
