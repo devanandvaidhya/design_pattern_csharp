@@ -4,6 +4,7 @@ using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Momento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
+using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
 
 
 //Memento pattern
@@ -58,9 +59,20 @@ using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 //----------------------------------End----------------------------------------------------------------------------------------------------
 //--------------------------Command Pattern--------------------------------------------
 
-TextEditors textEditors = new TextEditors();
-Button button = new Button();
-button.setCommand(new BoldCommand(textEditors));
-button.click();
-button.setCommand(new ItalicCommand(textEditors));
-button.click();
+//TextEditors textEditors = new TextEditors();
+//Button button = new Button();
+//button.setCommand(new BoldCommand(textEditors));
+//button.click();
+//button.setCommand(new ItalicCommand(textEditors));
+//button.click();
+//---------------------------------END-----------------------------------------------------------
+
+//Template Pattern
+
+DataParser csvParser = new CSVParser();
+DataParser jsonParser = new JsonParser();
+
+csvParser.Parse();
+jsonParser.Parse();
+
+//------------------------------------END----------------------------------------------------------
