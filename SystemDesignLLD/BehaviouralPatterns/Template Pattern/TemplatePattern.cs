@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace SystemDesignLLD.BehaviouralPatterns.Template_Pattern
 {
-    internal class TemplatePattern
-    {
-    }
+
 
     abstract class DataParser
     {
