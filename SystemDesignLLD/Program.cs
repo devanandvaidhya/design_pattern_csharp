@@ -3,6 +3,7 @@ using SystemDesignLLD.BehaviouralPatterns.CommandPattern;
 using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Momento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
+using SystemDesignLLD.BehaviouralPatterns.State_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
 
@@ -69,10 +70,22 @@ using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
 
 //Template Pattern
 
-DataParser csvParser = new CSVParser();
-DataParser jsonParser = new JsonParser();
+//DataParser csvParser = new CSVParser();
+//DataParser jsonParser = new JsonParser();
 
-csvParser.Parse();
-jsonParser.Parse();
+//csvParser.Parse();
+//jsonParser.Parse();
 
 //------------------------------------END----------------------------------------------------------
+
+// State Pattern
+
+TransportationService transportationService = new TransportationService(new Cycling());
+
+Console.WriteLine("ETA:" + transportationService.getETA());
+Console.WriteLine("Direction:" + transportationService.GetDirection());
+
+transportationService.setTransportationMode(new Car());
+
+Console.WriteLine("ETA:" + transportationService.getETA());
+Console.WriteLine("Direction:" + transportationService.GetDirection());
