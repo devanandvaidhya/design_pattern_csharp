@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SystemDesignLLD.BehaviouralPatterns.CommandPattern;
+using SystemDesignLLD.BehaviouralPatterns.Mediator_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Momento_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
@@ -80,12 +81,19 @@ using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
 
 // State Pattern
 
-TransportationService transportationService = new TransportationService(new Cycling());
+//TransportationService transportationService = new TransportationService(new Cycling());
 
-Console.WriteLine("ETA:" + transportationService.getETA());
-Console.WriteLine("Direction:" + transportationService.GetDirection());
+//Console.WriteLine("ETA:" + transportationService.getETA());
+//Console.WriteLine("Direction:" + transportationService.GetDirection());
 
-transportationService.setTransportationMode(new Car());
+//transportationService.setTransportationMode(new Car());
 
-Console.WriteLine("ETA:" + transportationService.getETA());
-Console.WriteLine("Direction:" + transportationService.GetDirection());
+//Console.WriteLine("ETA:" + transportationService.getETA());
+//Console.WriteLine("Direction:" + transportationService.GetDirection());
+//------------------------------------------End--------------------------------------------------------------------
+
+// Mediator Pattern 
+
+MediatorPattern mediatorPattern = new MediatorPattern();
+
+mediatorPattern.MainMethod();
