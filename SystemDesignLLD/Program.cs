@@ -7,6 +7,7 @@ using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.State_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
+using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 
 
 //Memento pattern
@@ -94,6 +95,14 @@ using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
 
 // Mediator Pattern 
 
-MediatorPattern mediatorPattern = new MediatorPattern();
+//MediatorPattern mediatorPattern = new MediatorPattern();
 
-mediatorPattern.MainMethod();
+//mediatorPattern.MainMethod();
+// -----------------------------End------------------------------------------------------------------
+
+// Singletone Pattern
+
+SignletonePattern signletonePattern = new SignletonePattern();
+
+signletonePattern.MainMethod();
+
