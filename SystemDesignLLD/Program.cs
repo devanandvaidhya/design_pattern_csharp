@@ -7,6 +7,8 @@ using SystemDesignLLD.BehaviouralPatterns.Observer_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.State_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern;
 using SystemDesignLLD.BehaviouralPatterns.Template_Pattern;
+using SystemDesignLLD.Creational_Patterns.Builder_Patterns;
+using SystemDesignLLD.Creational_Patterns.Factory_Patterns;
 using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 
 
@@ -102,7 +104,16 @@ using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 
 // Singletone Pattern
 
-SignletonePattern signletonePattern = new SignletonePattern();
+//SignletonePattern signletonePattern = new SignletonePattern();
 
-signletonePattern.MainMethod();
+//signletonePattern.MainMethod();
 
+//-------------------END----------------------------------
+//Builder Pattern
+//BuilderPattern builder = new BuilderPattern();
+//builder.MainMethod();
+//-------------------------------END----------------------------------------------------
+
+// Factory Pattern
+//FactoryPattern factory = new FactoryPattern();
+//factory.
