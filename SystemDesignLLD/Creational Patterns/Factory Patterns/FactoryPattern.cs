@@ -8,7 +8,7 @@ namespace SystemDesignLLD.Creational_Patterns.Factory_Patterns
 {
     public class FactoryPattern
     {
-        public static void Main(String[] args)
+        public  void MainMethod()
         {
             //Direct create objects
             //Transport vehicle = TransportFactory.createTransport("car");
