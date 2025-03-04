@@ -12,6 +12,7 @@ using SystemDesignLLD.Creational_Patterns.Builder_Patterns;
 using SystemDesignLLD.Creational_Patterns.Factory_Patterns;
 using SystemDesignLLD.Creational_Patterns.Prototype_Patterns;
 using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
+using SystemDesignLLD.StructuralPatterns.Adapter_Patterns;
 
 
 //Memento pattern
@@ -126,5 +127,10 @@ using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 //abstractfactory.MainMethod();
 //-----------------------END------------------------------------------------------
 //Prototype pattern
-PrototypePattern prototypePattern = new PrototypePattern();
-prototypePattern.MainMethod();
+//PrototypePattern prototypePattern = new PrototypePattern();
+//prototypePattern.MainMethod();
+//--------------End-------------------------------------------------------
+
+//Adapter Pattern
+AdapterPattern adapterPattern = new AdapterPattern();
+adapterPattern.MainMethod();
