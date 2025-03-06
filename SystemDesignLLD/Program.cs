@@ -14,6 +14,7 @@ using SystemDesignLLD.Creational_Patterns.Prototype_Patterns;
 using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 using SystemDesignLLD.StructuralPatterns.Adapter_Patterns;
 using SystemDesignLLD.StructuralPatterns.Decorator_Patterns;
+using SystemDesignLLD.StructuralPatterns.Proxy_Patterns;
 
 
 //Memento pattern
@@ -137,5 +138,10 @@ using SystemDesignLLD.StructuralPatterns.Decorator_Patterns;
 //adapterPattern.MainMethod();
 //--------------------End------------------------------------
 // Decorator Pattern
-DecoratorPattern decoratorPattern = new DecoratorPattern();
-decoratorPattern.MainMethod();
+//DecoratorPattern decoratorPattern = new DecoratorPattern();
+//decoratorPattern.MainMethod();
+//-------------------------End-------------------------------------
+
+// Proxy pattern
+ProxyPattern proxyPattern = new ProxyPattern();
+proxyPattern.MainMethod();
