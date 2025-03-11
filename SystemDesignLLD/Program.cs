@@ -15,6 +15,8 @@ using SystemDesignLLD.Creational_Patterns.Singleton_Pattern;
 using SystemDesignLLD.StructuralPatterns.Adapter_Patterns;
 using SystemDesignLLD.StructuralPatterns.Composite_Patterns;
 using SystemDesignLLD.StructuralPatterns.Decorator_Patterns;
+using SystemDesignLLD.StructuralPatterns.Facade_Patterns;
+using SystemDesignLLD.StructuralPatterns.FlyWeight_Patterns;
 using SystemDesignLLD.StructuralPatterns.Proxy_Patterns;
 
 
@@ -150,5 +152,14 @@ using SystemDesignLLD.StructuralPatterns.Proxy_Patterns;
 
 //Composite pattern
 
-CompositePattern compositePattern = new CompositePattern();
-compositePattern.MainMethod();
+//CompositePattern compositePattern = new CompositePattern();
+//compositePattern.MainMethod();
+//--------------------End-------------------------------------
+// Facade Pattern
+//FacadePattern facadePattern = new FacadePattern();
+//facadePattern.MainMethod();
+//---------------------End------------------------------------
+
+// FlyWeightPattern
+FlyWeightPattern flyWeightPattern = new FlyWeightPattern();
+flyWeightPattern.MainMethod();
