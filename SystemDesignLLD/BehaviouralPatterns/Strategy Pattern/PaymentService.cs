@@ -34,10 +34,10 @@ namespace SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern
         }
     }
 
-    public class PaymentService
+    public class PaymentServices
     {
         private PaymentStrategy stratergy;
-        public PaymentService()
+        public PaymentServices()
         {
         }
 
@@ -49,5 +49,21 @@ namespace SystemDesignLLD.BehaviouralPatterns.Strategy_Pattern
         public void payment() {
             stratergy.paymentProcess();
         }
+    }
+
+    public class StrategyPattern
+    {
+
+        public void MainMethod()
+        {
+            PaymentServices paymentServices = new PaymentServices();
+            //paymentService.setPayment(new CreditCard());
+            //paymentService.setPayment(new DebitCard());
+            //added new UPI payment method 
+
+            paymentServices.setPayment(new UPI());
+            paymentServices.payment();
+        }
+
     }
 }

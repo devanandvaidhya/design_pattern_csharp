@@ -8,6 +8,15 @@ namespace SystemDesignLLD.BehaviouralPatterns.CommandPattern
 {
     public class CommandPattern
     {
+        public void MainMethod()
+        {
+            TextEditors textEditors = new TextEditors();
+            Button button = new Button();
+            button.setCommand(new BoldCommand(textEditors));
+            button.click();
+            button.setCommand(new ItalicCommand(textEditors));
+            button.click();
+        }
     }
 
     public interface Command {

@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace SystemDesignLLD.BehaviouralPatterns.State_Pattern
 {
-    internal class StatePattern
+    public class StatePattern
     {
+        public void MainMethod()
+        {
+            TransportationService transportationService = new TransportationService(new Cycling());
+
+            Console.WriteLine("ETA:" + transportationService.getETA());
+            Console.WriteLine("Direction:" + transportationService.GetDirection());
+
+            transportationService.setTransportationMode(new Car());
+
+            Console.WriteLine("ETA:" + transportationService.getETA());
+            Console.WriteLine("Direction:" + transportationService.GetDirection());
+        }
     }
 
     public interface TransportationMode

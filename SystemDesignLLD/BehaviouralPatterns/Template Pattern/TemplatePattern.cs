@@ -43,4 +43,16 @@ namespace SystemDesignLLD.BehaviouralPatterns.Template_Pattern
             Console.WriteLine("Json processing data");
         }
     }
+
+    public class TemplatePattern
+    {
+        public void MainMethod()
+        {
+            DataParser csvParser = new CSVParser();
+            DataParser jsonParser = new JsonParser();
+
+            csvParser.Parse();
+            jsonParser.Parse();
+        }
+    }
 }

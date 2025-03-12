@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SystemDesignLLD.BehaviouralPatterns.Memento_Pattern;
 
 namespace SystemDesignLLD.BehaviouralPatterns.Momento_Pattern
 {
@@ -32,5 +33,29 @@ namespace SystemDesignLLD.BehaviouralPatterns.Momento_Pattern
 
 
 
+    }
+
+    public class MementoPattern
+    {
+        public void MainMethod()
+        {
+            
+            TextEditor editor = new TextEditor();
+            Caretaker caretaker = new Caretaker();
+            editor.write("A");
+            caretaker.saveState(editor);
+
+            editor.write("B");
+            caretaker.saveState(editor);
+
+            editor.write("C");
+            caretaker.saveState(editor);
+
+            caretaker.undo(editor);
+            //Console.WriteLine(editor.getContent());
+
+            caretaker.undo(editor);
+            Console.WriteLine(editor.getContent());
+        }
     }
 }

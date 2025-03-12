@@ -21,86 +21,45 @@ using SystemDesignLLD.StructuralPatterns.Proxy_Patterns;
 
 
 //Memento pattern
-
-//TextEditor editor = new TextEditor();
-//Caretaker caretaker = new Caretaker();
-//editor.write("A");
-//caretaker.saveState(editor);
-
-//editor.write("B");
-//caretaker.saveState(editor);
-
-//editor.write("C");
-//caretaker.saveState(editor);
-
-//caretaker.undo(editor);
-////Console.WriteLine(editor.getContent());
-
-//caretaker.undo(editor);
-//Console.WriteLine(editor.getContent());
+//MementoPattern mementoPattern = new MementoPattern();
+//mementoPattern.MainMethod();
 
 //-----------------End-----------------------------------------------------------------------------------------------------------
 
 //---Observer pattern-----------
 
-//WeatherStation weatherStation = new WeatherStation();
-//Mobile mobile = new Mobile("Samsung");
-//Tablet tablet = new Tablet("VIVO");
+//ObserverPatern observerPatern = new ObserverPatern();
 
-//weatherStation.attach(tablet);
-//weatherStation.attach(mobile);
+//observerPatern.MainMethod();
 
-//weatherStation.setTemperature(10);
-//weatherStation.setTemperature(20);
-
-//weatherStation.detach(tablet);
-//weatherStation.setTemperature(5);
 
 //--------End---------------------------------------------------------------------------------------------------------------------------------
 
 // ------------------Strategy Pattern--------------------------------
 
 //// Single responsibility , open close imlementation
-//PaymentService paymentService = new PaymentService();
-////paymentService.setPayment(new CreditCard());
-////paymentService.setPayment(new DebitCard());
-////added new UPI payment method 
-
-//paymentService.setPayment(new UPI());
-//paymentService.payment();
+//StrategyPattern strategyPattern = new StrategyPattern();
+//strategyPattern.MainMethod();
 
 //----------------------------------End----------------------------------------------------------------------------------------------------
 //--------------------------Command Pattern--------------------------------------------
 
-//TextEditors textEditors = new TextEditors();
-//Button button = new Button();
-//button.setCommand(new BoldCommand(textEditors));
-//button.click();
-//button.setCommand(new ItalicCommand(textEditors));
-//button.click();
+//CommandPattern commandPattern = new CommandPattern();
+//commandPattern.MainMethod();
 //---------------------------------END-----------------------------------------------------------
 
 //Template Pattern
 
-//DataParser csvParser = new CSVParser();
-//DataParser jsonParser = new JsonParser();
-
-//csvParser.Parse();
-//jsonParser.Parse();
+//TemplatePattern templatePattern = new TemplatePattern();
+//templatePattern.MainMethod();
 
 //------------------------------------END----------------------------------------------------------
 
 // State Pattern
 
-//TransportationService transportationService = new TransportationService(new Cycling());
+//StatePattern statePattern = new StatePattern();
+//statePattern.MainMethod();
 
-//Console.WriteLine("ETA:" + transportationService.getETA());
-//Console.WriteLine("Direction:" + transportationService.GetDirection());
-
-//transportationService.setTransportationMode(new Car());
-
-//Console.WriteLine("ETA:" + transportationService.getETA());
-//Console.WriteLine("Direction:" + transportationService.GetDirection());
 //------------------------------------------End--------------------------------------------------------------------
 
 // Mediator Pattern 
@@ -161,5 +120,6 @@ using SystemDesignLLD.StructuralPatterns.Proxy_Patterns;
 //---------------------End------------------------------------
 
 // FlyWeightPattern
-FlyWeightPattern flyWeightPattern = new FlyWeightPattern();
-flyWeightPattern.MainMethod();
+//FlyWeightPattern flyWeightPattern = new FlyWeightPattern();
+//flyWeightPattern.MainMethod();
+//----------------------End---------------------------------

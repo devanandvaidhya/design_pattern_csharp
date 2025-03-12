@@ -41,5 +41,24 @@ namespace SystemDesignLLD.BehaviouralPatterns.Observer_Pattern
         }
     }
 
+    public class ObserverPatern
+    {
+        public void MainMethod()
+        {
+            WeatherStation weatherStation = new WeatherStation();
+            Mobile mobile = new Mobile("Samsung");
+            Tablet tablet = new Tablet("VIVO");
+
+            weatherStation.attach(tablet);
+            weatherStation.attach(mobile);
+
+            weatherStation.setTemperature(10);
+            weatherStation.setTemperature(20);
+
+            weatherStation.detach(tablet);
+            weatherStation.setTemperature(5);
+        }
+    }
+
 }                                      
                                        
